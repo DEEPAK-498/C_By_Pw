@@ -8,6 +8,9 @@ int main(){
     // int mx = arr[0];
     int mx = INT_MIN; /*This Also Works Fine. Basically INT_MIN Defines The Smallest Number.*/
 
+    //Value Of INT_MIN
+    printf("%d\n", mx);
+    
     for(int i=0; i<n; i++){
         if(mx<arr[i]) mx = arr[i];
     }
