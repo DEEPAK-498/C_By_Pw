@@ -5,7 +5,7 @@ int main(){
     int arr[] = {1,4,5,3,6};
     int n = sizeof(arr)/4;
 
-    // int mx = arr[0];
+    // int mx = arr[0];  /* We Can Use The First Element Also For This We Have to Start The Loop From The 1St index.*/
     int mx = INT_MIN; /*This Also Works Fine. Basically INT_MIN Defines The Smallest Number.*/
 
     //Value Of INT_MIN
