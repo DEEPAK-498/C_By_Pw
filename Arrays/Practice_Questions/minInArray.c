@@ -6,14 +6,24 @@ int main(){
     int n = sizeof(arr)/4;
 
     // int mn = arr[0]; /*We Can Start With The First Element Also*/
-    int mn = INT_MAX; /*This Also Works Fine. Basically INT_MIN Defines The Smallest Number.*/
+
+    //METHODE 1
+    int mn_1 = INT_MAX; /*This Also Works Fine. Basically INT_MIN Defines The Smallest Number.*/
     
     //Value Of INT_MAX
-    printf("%d\n", mn);
+    printf("%d\n", mn_1);
 
     for(int i=0; i<n; i++){
-        if(mn>arr[i]) mn = arr[i];
+        if(mn_1>arr[i]) mn_1 = arr[i];
     }
-    printf("%d\n", mn);
+    printf("Methode 1 Output : %d\n", mn_1);
+
+    //METHODE 2
+    int mn_2 = arr[0];
+    
+    for(int i=1; i<n; i++){
+        if(mn_2>arr[i]) mn_2 = arr[i];
+    }
+    printf("Methode 2 Output : %d\n", mn_2);
     return 0;
 }
